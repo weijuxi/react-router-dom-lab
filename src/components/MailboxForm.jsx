@@ -13,7 +13,7 @@ const MailboxForm = (props) => {
         props.addMailbox({ boxSize, boxholder });
         setBoxSize('');
         setBoxholder('');
-        navigate('/mailbox');
+        navigate('/mailboxs');
     }
 
     
@@ -22,22 +22,18 @@ const MailboxForm = (props) => {
         <div>
             <h2>New Mailbox</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Box Size:
+                <label htmlFor="boxSize">Box Size:</label>
                     <input
                         type="text"
                         value={boxSize}
                         onChange={(e) => setBoxSize(e.target.value)}
                     />
-                </label>
-                <label>
-                    Boxholder:
+                <label htmlFor="boxholder"> Boxholder:</label>
                     <input
                         type="text"
                         value={boxholder}
                         onChange={(e) => setBoxholder(e.target.value)}
                     />
-                </label>
                 <button type="submit">Add Mailbox</button>
             </form>
         </div>

@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import MailboxList from './components/MailboxList';
 import MailboxForm from './components/MailboxForm';
 import MailboxDetails from './components/MailboxDetails';
+import './App.css';
 
 const mailboxExample = [
   {
